@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roteiro Histórico - Marechal Deodoro / AL</title>
+  <style>
+    :root {
+      --primary: #8C2D19;
+      --secondary: #D96B27;
+      --bg: #F9F6F0;
+      --card-bg: #FFFFFF;
+      --text: #2C2C2C;
+      --accent: #E8A838;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(140, 45, 25, 0.85), rgba(140, 45, 25, 0.95)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80') center/cover;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background-color: var(--secondary);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 3px solid var(--secondary);
+      display: inline-block;
+      margin-bottom: 25px;
+      padding-bottom: 5px;
+    }
+
+    /* Estilo do Mapa */
+    .map-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%; /* Proporção 16:9 */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Roteiro */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .timeline-item {
+      background: var(--card-bg);
+      padding: 20px;
+      border-left: 5px solid var(--secondary);
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .timeline-item h3 {
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    /* Grid dos Pontos Turísticos */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary);
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8rem; }
+      nav { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Roteiro Histórico de Marechal Deodoro</h1>
+    <p>Explore a primeira capital de Alagoas, berço da Proclamação da República e patrimônio histórico nacional.</p>
+  </header>
+
+  <nav>
+    <a href="#mapa">Mapa</a>
+    <a href="#roteiro">Sugestão de Roteiro</a>
+    <a href="#pontos">Pontos Turísticos</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Seção do Mapa -->
+    <section id="mapa">
+      <h2>Mapa Interativo do Roteiro</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/d/embed?mid=16EvrtIXU3HJckVeSrUhzT-C9TGBLbX4"></iframe>
+      </div>
+    </section>
+
+    <!-- Seção do Roteiro -->
+    <section id="roteiro">
+      <h2>Sugestão de Roteiro (1 Dia)</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Manhã: Imersão Histórica e Berço da República</h3>
+          <p>Inicie o percurso pelo <strong>Centro Histórico</strong>. Visite a <strong>Casa Museu Marechal Deodoro</strong> e o conjunto arquitetônico da <strong>Casa de Câmara e Cadeia</strong>. Em seguida, contemple a grandiosidade do <strong>Convento Franciscano</strong> e a <strong>Igreja Matriz de Nossa Senhora da Conceição</strong>.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Tarde: Fé, Arquitetura e Tradição</h3>
+          <p>Após o almoço, percorra as igrejas históricas: <strong>Nossa Senhora do Carmo</strong>, <strong>São José</strong> e a <strong>Igreja de Nossa Senhora do Rosário dos Pretos</strong>. Conheça a <strong>Casa da Singeleza</strong> e admire a <strong>Igreja de Santa Maria Madalena</strong>.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Fim de Tarde: Vista Panorâmica e Pôr do Sol</h3>
+          <p>Suba a <strong>Escadaria do Barro Vermelho</strong> para apreciar a vista da cidade. Encaminhe-se para a <strong>Orla Lagunar de Marechal Deodoro</strong> para relaxar e acompanhar o pôr do sol na Lagoa Manguaba.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção dos Pontos Turísticos -->
+    <section id="pontos">
+      <h2>História dos Pontos Turísticos</h2>
+      <div class="grid">
+
+        <div class="card">
+          <h3>Centro Histórico</h3>
+          <p>Tombado pelo IPHAN em 2006, o conjunto arquitetônico reúne casarios coloniais dos séculos XVIII e XIX, preservando a memória da antiga Vila Madalena da Lagoa do Sul, primeira capital de Alagoas.</p>
+        </div>
+
+        <div class="card">
+          <h3>Casa Museu Marechal Deodoro</h3>
+          <p>Residência onde nasceu o Marechal Deodoro da Fonseca, primeiro Presidente do Brasil. O museu preserva móveis, objetos pessoais e documentos que contam a história da família e da Proclamação da República.</p>
+        </div>
+
+        <div class="card">
+          <h3>Convento Franciscano e Museu de Arte Sacra</h3>
+          <p>Construído no século XVIII, o antigo Convento de Santa Maria Madalena abriga o Museu Arquidiocesano Dom Ranulpho, reunindo um dos acervos de arte sacra mais valiosos do Nordeste brasileiro.</p>
+        </div>
+
+        <div class="card">
+          <h3>Casa de Câmara e Cadeia</h3>
+          <p>Edifício colonial símbolo do poder civil e judiciário no período imperial. Funcionou como sede administrativa da vila e prisão, destacando-se pela arquitetura robusta e preservada.</p>
+        </div>
+
+        <div class="card">
+          <h3>Igreja Matriz de Nossa Senhora da Conceição</h3>
+          <p>Uma das igrejas mais antigas da cidade, marco do povoamento local. Possui altar em estilo barroco e detalhes decorativos que remetem ao período colonial alagoano.</p>
+        </div>
+
+        <div class="card">
+          <h3>Igreja de Nossa Senhora do Carmo</h3>
+          <p>Integrada ao antigo convento carmelita, destaca-se pelo estilo rococó e barroco. É um importante local de devoção e patrimônio religioso da cidade.</p>
+        </div>
+
+        <div class="card">
+          <h3>Igreja de Nossa Senhora do Rosário dos Pretos</h3>
+          <p>Construída no século XVIII pela irmandade de homens negros, representa a fé, a resistência e a organização da população escravizada e libertada na antiga capital.</p>
+        </div>
+
+        <div class="card">
+          <h3>Igreja de São José</h3>
+          <p>Capela de proporções singelas e grande valor afetivo para a comunidade local, enriquecendo o circuito de templos históricos do município.</p>
+        </div>
+
+        <div class="card">
+          <h3>Igreja de Santa Maria Madalena</h3>
+          <p>Ligada ao complexo franciscano, destaca-se pela fachada imponente e pelo conjunto interior decorado com talhas de madeira e elementos sacros.</p>
+        </div>
+
+        <div class="card">
+          <h3>Casa da Singeleza</h3>
+          <p>Exemplo de residência histórica preservada que reflete o modo de vida e a arquitetura residencial urbana típica dos séculos passados em Alagoas.</p>
+        </div>
+
+        <div class="card">
+          <h3>Escadaria do Barro Vermelho</h3>
+          <p>Ponto elevado que conecta diferentes níveis da cidade, proporcionando uma vista panorâmica encantadora sobre o casario histórico e a vegetação do entorno.</p>
+        </div>
+
+        <div class="card">
+          <h3>Orla Lagunar de Marechal Deodoro</h3>
+          <p>Espaço de convivência às margens da Lagoa Manguaba, ideal para caminhadas, gastronomia local e observação do pôr do sol no encerramento do roteiro.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Roteiro Histórico e Cultural - Marechal Deodoro / AL</p>
+  </footer>
+
+</body>
+</html>
